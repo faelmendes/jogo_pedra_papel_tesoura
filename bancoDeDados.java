@@ -44,7 +44,6 @@ public class bancoDeDados {
                     }
                 } while (linha != null);
             }///
-            System.out.println("pepepepepepepepepepepepepepep");
         } catch (FileNotFoundException ex) {
             Logger.getLogger(bancoDeDados.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
