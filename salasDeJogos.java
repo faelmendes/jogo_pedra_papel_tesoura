@@ -48,7 +48,6 @@ public class salasDeJogos extends Thread {
             String mac01 = null;
             String mac02 = null;
             while (semaforo) {
-                System.out.println(jogador01.hashCode() + " " + jogador02.hashCode());///
                 String resposta01 = in01.readUTF();
                 String resposta02 = in02.readUTF();
                 if (trava) {
@@ -120,7 +119,6 @@ public class salasDeJogos extends Thread {
 
     public void sair() throws IOException {
         try {
-            System.out.println("fechafefefefefefeefefefeffefefefefefefefefefe");
             this.jogador01.close();
             this.jogador02.close();
             semaforo = false;
