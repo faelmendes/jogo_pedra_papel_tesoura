@@ -58,7 +58,7 @@ public class salasDeJogos extends Thread {
                     mac02 = p02[0];
                     out01.writeUTF(p02[1]);
                     out02.writeUTF(p01[1]);
-                    /*String result = banco.busca(mac01, mac02);
+                    String result = banco.busca(mac01, mac02);
                     String[] placar = result.split(" ");
                     if (placar[0].equals("1")) {
                         vitoria01 = Integer.parseInt(placar[1]);
@@ -70,15 +70,15 @@ public class salasDeJogos extends Thread {
                     } else {
                         vitoria01 = Integer.parseInt(placar[1]);
                         vitoria02 = Integer.parseInt(placar[2]);
-                    }*/
+                    }
                     trava = false;
                 } else if (resposta01.equals("sair")) {
-                    //banco.cadastra(mac01 + " " + mac02 + " " + vitoria01 + " " + vitoria02);/////////
+                    banco.cadastra(mac01 + " " + mac02 + " " + vitoria01 + " " + vitoria02);/////////
                     out01.writeUTF("sair");
                     out02.writeUTF("sair");
                     sair();
                 } else if (resposta02.equals("sair")) {
-                    //banco.cadastra(mac01 + " " + mac02 + " " + vitoria01 + " " + vitoria02);
+                    banco.cadastra(mac01 + " " + mac02 + " " + vitoria01 + " " + vitoria02);
                     out02.writeUTF("sair");
                     out01.writeUTF("sair");
                     sair();
