@@ -76,6 +76,7 @@ public class user {
                                 System.out.println(" U JOGADOR DESCONECTOU-SE");
                                 jogar.sair();
                                 semaforo = false;
+                                trava=true;
                                 break;
                         }
                     } else {
@@ -106,6 +107,7 @@ public class user {
                                 System.out.println(" U JOGADOR DESCONECTOU-SE");
                                 jogar.sair();
                                 semaforo = false;
+                                trava=true;
                                 break;
                         }
                     } else {
@@ -136,6 +138,7 @@ public class user {
                                 System.out.println(" U JOGADOR DESCONECTOU-SE");
                                 jogar.sair();
                                 semaforo = false;
+                                trava=true;
                                 break;
                         }
                     } else {
